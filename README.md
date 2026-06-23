@@ -4,7 +4,7 @@ Site pessoal de **Artur Filipe**, profissional em transição para ciberseguran�
 
 ## ✨ Sobre
 
-Este site serve como portfólio e CV online, listando projetos práticos de cibersegurança baseados na lista do canal **Mad Hat**, organizados do mais fácil/essencial ao mais avançado.
+Este site serve como portfólio e CV online, listando projetos práticos de cibersegurança, organizados do mais fácil/essencial ao mais avançado.
 
 ## 🛠 Tecnologias
 
