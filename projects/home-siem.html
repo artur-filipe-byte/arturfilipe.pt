@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home SIEM — Projeto | Artur Filipe Custódia</title>
+  <meta name="description" content="Implementação de um Home SIEM com Elastic Stack, Sysmon e Windows Event Logs para deteção e investigação de ataques." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <a href="/" class="logo">artur<span>filipe</span>.pt</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">CV</a></li>
+        <li><a href="../projects.html" class="active">Projetos</a></li>
+        <li><a href="../index.html#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Project Detail -->
+  <section class="section">
+    <div class="container">
+      <div class="project-detail">
+
+        <a href="../projects.html" class="back-link">← Voltar aos Projetos</a>
+
+        <h1>Home SIEM e Relatório de Investigação</h1>
+        <div class="meta">
+          <span>Dificuldade: ⭐⭐ 2/10</span>
+          <span>Duração estimada: 2-3 dias</span>
+          <span>Estado: Em planeamento</span>
+        </div>
+
+        <div class="content">
+          <h2>Objetivo</h2>
+          <p>
+            Instalar e configurar um SIEM (Elastic Stack ou Microsoft Sentinel) local para ingerir logs do Windows e Sysmon, 
+            detetar ataques simulados, e produzir um <strong>write-up de investigação</strong> completo que documente 
+            o processo de deteção do início ao fim. A documentação é mais importante que a instalação.
+          </p>
+
+          <h2>Porquê este projeto?</h2>
+          <p>
+            Segundo o canal <strong>Mad Hat</strong>, este é um dos projetos mais valorizados para entry-level porque 
+            demonstra que sabes <strong>investigar</strong> e não apenas seguir tutoriais. O write-up é o que prova 
+            a um recrutador que tens capacidade analítica para um cargo SOC.
+          </p>
+
+          <h2>Ferramentas e Tecnologias</h2>
+          <ul>
+            <li><strong>Elastic Stack</strong> (Elasticsearch, Kibana, Logstash) — SIEM open-source</li>
+            <li><strong>Sysmon</strong> — Monitorização avançada de eventos do Windows</li>
+            <li><strong>Windows Event Logs</strong> — Security, System, Application</li>
+            <li><strong>Kali Linux</strong> — Para simular ataques</li>
+            <li><strong>Atomic Red Team</strong> — Testes de deteção automatizados</li>
+          </ul>
+
+          <h2>Passos do Projeto</h2>
+          <ol>
+            <li>Configurar Windows VM com logging avançado e Sysmon</li>
+            <li>Instalar Elastic Stack (ou usar Elastic Cloud grátis)</li>
+            <li>Ingerir logs do Windows para o SIEM via Winlogbeat</li>
+            <li>Criar dashboards e alertas no Kibana</li>
+            <li>Simular ataques (ex: brute force RDP, PowerShell abuse)</li>
+            <li>Documentar a investigação: o que detetaste, como, e porquê</li>
+            <li>Publicar o write-up completo no portfólio</li>
+          </ol>
+
+          <h2>Entregáveis</h2>
+          <ul>
+            <li>Write-up detalhado com screenshots do dashboard</li>
+            <li>Explicação da lógica de cada alerta</li>
+            <li>Cronologia do ataque: deteção → análise → conclusão</li>
+            <li>Link para o repositório GitHub com configurações</li>
+          </ul>
+
+          <div style="background: #f1f5f9; border-radius: 8px; padding: 24px; margin-top: 24px;">
+            <p style="font-weight: 600; color: var(--primary);">📌 Nota:</p>
+            <p style="color: var(--text-muted); font-size: 0.95rem;">
+              Este projeto está atualmente em fase de planeamento. Vou documentar cada passo à medida que for 
+              implementado. Volta em breve para ver o progresso!
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <span class="copyright">&copy; 2026 Artur Filipe Custódia</span>
+      <div class="social-links">
+        <a href="https://github.com/arturfilipe" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/artur-cust%C3%B3dia-417a65341/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:artur@arturfilipe.pt">Email</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

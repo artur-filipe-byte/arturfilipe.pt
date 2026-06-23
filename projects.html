@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projetos — Artur Filipe Custódia</title>
+  <meta name="description" content="Projetos práticos de cibersegurança organizados por dificuldade. Baseados na lista Mad Hat e adaptados ao meu percurso de transição de carreira." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <a href="/" class="logo">artur<span>filipe</span>.pt</a>
+      <ul class="nav-links">
+        <li><a href="index.html">CV</a></li>
+        <li><a href="projects.html" class="active">Projetos</a></li>
+        <li><a href="index.html#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Projetos de Cibersegurança</h1>
+      <p>
+        Os 20 projetos recomendados pelo canal <strong>Mad Hat</strong>, organizados do mais fácil/essencial 
+        ao mais avançado. Cada projeto tem uma página dedicada com documentação completa.
+      </p>
+    </div>
+  </section>
+
+  <!-- Project List -->
+  <section class="section" style="padding-top: 0;">
+    <div class="container">
+      <div class="project-list">
+
+        <!-- 1 -->
+        <div class="project-card" id="portfolio">
+          <div class="project-difficulty">⭐ -1/10</div>
+          <div class="project-content">
+            <h3><a href="projects/portfolio.html">Site de Portfólio</a></h3>
+            <p>Página HTML limpa que serve como contentor para os teus projetos e currículo. O ponto de entrada para demonstrar o teu trabalho a gestores de contratação.</p>
+            <div class="project-tags">
+              <span class="project-tag">HTML</span>
+              <span class="project-tag">CSS</span>
+              <span class="project-tag">GitHub Pages</span>
+              <span class="project-tag">DNS</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="project-card" id="grc">
+          <div class="project-difficulty">⭐ 1/10</div>
+          <div class="project-content">
+            <h3><a href="projects/grc-assessment.html">Avaliação de GRC</a></h3>
+            <p>Análise de lacunas (gap assessment) numa empresa fictícia utilizando frameworks como NIST CSF ou ISO 27001. Criação de relatório de falhas e registo de riscos.</p>
+            <div class="project-tags">
+              <span class="project-tag">NIST CSF</span>
+              <span class="project-tag">ISO 27001</span>
+              <span class="project-tag">Gestão de Risco</span>
+              <span class="project-tag">Documentação</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="project-card" id="homesiem">
+          <div class="project-difficulty">⭐⭐ 2/10</div>
+          <div class="project-content">
+            <h3><a href="projects/home-siem.html">Home SIEM e Relatório de Investigação</a></h3>
+            <p>Instalar um SIEM (Elastic ou Sentinel) e ingerir logs do Windows ou Sysmon para capturar ataques. O ponto crucial é o write-up onde documentas como investigaste e detetaste as ameaças.</p>
+            <div class="project-tags">
+              <span class="project-tag">Elastic Stack</span>
+              <span class="project-tag">Sysmon</span>
+              <span class="project-tag">Windows Logs</span>
+              <span class="project-tag">Write-up</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="project-card" id="playbook">
+          <div class="project-difficulty">⭐⭐ 2/10</div>
+          <div class="project-content">
+            <h3><a href="projects/incident-playbook.html">Playbook de Resposta a Incidentes e Tabletop</a></h3>
+            <p>Escrever um guia prático de resposta a incidentes e simular um ataque (tabletop exercise) para testar a eficácia do plano. Demonstra capacidade de comunicação e pensamento sob pressão.</p>
+            <div class="project-tags">
+              <span class="project-tag">Incident Response</span>
+              <span class="project-tag">Tabletop</span>
+              <span class="project-tag">Documentação</span>
+              <span class="project-tag">NIST SP 800-61</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="project-card" id="phishing">
+          <div class="project-difficulty">⭐⭐⭐ 3/10</div>
+          <div class="project-content">
+            <h3><a href="projects/phishing-analysis.html">Análise de E-mail de Phishing</a></h3>
+            <p>Analisar amostras reais de phishing, dissecando cabeçalhos (headers) e verificando configurações como SPF, DKIM e DMARC. Entender como as mensagens são forjadas.</p>
+            <div class="project-tags">
+              <span class="project-tag">SPF</span>
+              <span class="project-tag">DKIM</span>
+              <span class="project-tag">DMARC</span>
+              <span class="project-tag">Email Headers</span>
+              <span class="project-tag">Phishing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="project-card" id="honeypot">
+          <div class="project-difficulty">⭐⭐⭐ 3/10</div>
+          <div class="project-content">
+            <h3><a href="projects/honeypot-dashboard.html">Honeypot com Dashboard de Ataques</a></h3>
+            <p>Implementar Cowrie num VPS para recolher tráfego de ataques reais da internet. Os dados (IPs de origem) são visualizados num dashboard. Dados reais impressionam mais que CTFs.</p>
+            <div class="project-tags">
+              <span class="project-tag">Cowrie</span>
+              <span class="project-tag">VPS</span>
+              <span class="project-tag">Dashboard</span>
+              <span class="project-tag">Threat Intelligence</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7 -->
+        <div class="project-card" id="network-traffic">
+          <div class="project-difficulty">⭐⭐⭐⭐⭐ 5/10</div>
+          <div class="project-content">
+            <h3><a href="projects/network-traffic-analysis.html">Análise de Tráfego de Rede</a></h3>
+            <p>Utilizar Wireshark ou Zeek para analisar ficheiros PCAP maliciosos em busca de sinais de comunicação com servidores de Comando e Controlo (C2). Identificação de IOCs em tráfego real.</p>
+            <div class="project-tags">
+              <span class="project-tag">Wireshark</span>
+              <span class="project-tag">Zeek</span>
+              <span class="project-tag">PCAP</span>
+              <span class="project-tag">C2 Analysis</span>
+              <span class="project-tag">IOC</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 -->
+        <div class="project-card" id="cloud-misconfig">
+          <div class="project-difficulty">⭐⭐⭐⭐⭐ 5/10</div>
+          <div class="project-content">
+            <h3><a href="projects/cloud-misconfig.html">Caça a Configurações Incorretas na Cloud</a></h3>
+            <p>Configurar ambientes em Azure ou AWS, propositadamente deixar falhas (buckets públicos, chaves expostas) e depois identificar e corrigir essas vulnerabilidades.</p>
+            <div class="project-tags">
+              <span class="project-tag">AWS</span>
+              <span class="project-tag">Azure</span>
+              <span class="project-tag">S3 Buckets</span>
+              <span class="project-tag">Cloud Security</span>
+              <span class="project-tag">ScoutSuite</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9 -->
+        <div class="project-card" id="iam">
+          <div class="project-difficulty">⭐⭐⭐⭐⭐ 5/10</div>
+          <div class="project-content">
+            <h3><a href="projects/iam-privilege-minimum.html">Design de IAM com Privilégio Mínimo</a></h3>
+            <p>Criar um modelo de permissões do zero para uma aplicação em cloud, garantindo que cada utilizador ou serviço tem apenas o acesso estritamente necessário. Princípio de Least Privilege.</p>
+            <div class="project-tags">
+              <span class="project-tag">IAM</span>
+              <span class="project-tag">Least Privilege</span>
+              <span class="project-tag">RBAC</span>
+              <span class="project-tag">Cloud Security</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="project-card" id="prompt-injection">
+          <div class="project-difficulty">⭐⭐⭐⭐⭐ 5/10</div>
+          <div class="project-content">
+            <h3><a href="projects/prompt-injection.html">Prompt Injection em LLMs</a></h3>
+            <p>Testes de intrusão em aplicações de IA utilizando técnicas de jailbreak e injeção de prompts baseadas no OWASP LLM Top 10. Segurança de sistemas de IA generativa.</p>
+            <div class="project-tags">
+              <span class="project-tag">LLM Security</span>
+              <span class="project-tag">OWASP LLM Top 10</span>
+              <span class="project-tag">Jailbreak</span>
+              <span class="project-tag">Prompt Injection</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="project-card" id="threat-intel">
+          <div class="project-difficulty">⭐⭐⭐⭐⭐⭐ 6/10</div>
+          <div class="project-content">
+            <h3><a href="projects/threat-intel-automation.html">Automação de Inteligência de Ameaças</a></h3>
+            <p>Implementar MISP para ingerir feeds de ameaças (STIX/TAXII) e utilizar um LLM local para gerar resumos automáticos diários para a equipa de segurança.</p>
+            <div class="project-tags">
+              <span class="project-tag">MISP</span>
+              <span class="project-tag">STIX/TAXII</span>
+              <span class="project-tag">Threat Intel</span>
+              <span class="project-tag">Automação</span>
+              <span class="project-tag">Python</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="project-card" id="oauth-phishing">
+          <div class="project-difficulty">⭐⭐⭐⭐⭐⭐ 6/10</div>
+          <div class="project-content">
+            <h3><a href="projects/oauth-phishing.html">Demo de OAuth Consent Phishing</a></h3>
+            <p>Criar uma aplicação maliciosa para simular um ataque de concessão de permissões no Entra ID (Azure AD), demonstrando como detetar e mitigar este tipo de ataque de identidade moderno.</p>
+            <div class="project-tags">
+              <span class="project-tag">OAuth 2.0</span>
+              <span class="project-tag">Entra ID</span>
+              <span class="project-tag">Azure AD</span>
+              <span class="project-tag">App Consent</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="project-card" id="sigma-rule">
+          <div class="project-difficulty">⭐⭐⭐⭐⭐⭐ 6/10</div>
+          <div class="project-content">
+            <h3><a href="projects/sigma-rule.html">Contribuir com uma Regra Sigma para o Sigma HQ</a></h3>
+            <p>Escrever uma regra de deteção para uma técnica de ataque real e submetê-la ao repositório público do Sigma HQ. Contribuição para o padrão da indústria de deteção de ameaças.</p>
+            <div class="project-tags">
+              <span class="project-tag">Sigma</span>
+              <span class="project-tag">Sigma HQ</span>
+              <span class="project-tag">Deteção</span>
+              <span class="project-tag">YAML</span>
+              <span class="project-tag">MITRE ATT&CK</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="project-card" id="soar">
+          <div class="project-difficulty">⭐⭐⭐⭐⭐⭐ 6/10</div>
+          <div class="project-content">
+            <h3><a href="projects/soar-automation.html">Playbook de Automação SOAR</a></h3>
+            <p>Criar scripts em Python para automatizar a resposta a alertas: enriquecimento de dados de um IP, isolamento automático de anfitrião comprometido. Integração com API de SIEM.</p>
+            <div class="project-tags">
+              <span class="project-tag">SOAR</span>
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Automação</span>
+              <span class="project-tag">API Integration</span>
+              <span class="project-tag">Incident Response</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="project-card" id="ad-lab">
+          <div class="project-difficulty">⭐⭐⭐⭐⭐⭐⭐ 7/10</div>
+          <div class="project-content">
+            <h3><a href="projects/ad-attack-defense.html">Laboratório de Ataque e Defesa de Active Directory</a></h3>
+            <p>Montar ambiente AD para executar ataques como Kerberoasting, Pass-the-Hash, Golden Ticket. Foco em como detetar e aplicar patches contra estas técnicas usando ferramentas nativas.</p>
+            <div class="project-tags">
+              <span class="project-tag">Active Directory</span>
+              <span class="project-tag">Kerberoasting</span>
+              <span class="project-tag">Pass-the-Hash</span>
+              <span class="project-tag">BloodHound</span>
+              <span class="project-tag">Impacket</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 16 -->
+        <div class="project-card" id="detection-pipeline">
+          <div class="project-difficulty">⭐⭐⭐⭐⭐⭐⭐ 7/10</div>
+          <div class="project-content">
+            <h3><a href="projects/detection-pipeline.html">Pipeline de Deteção como Código</a></h3>
+            <p>Implementar fluxo CI/CD (Git) para regras de deteção, onde as regras são testadas automaticamente quanto a falsos positivos e implementadas após aprovação. Detection as Code.</p>
+            <div class="project-tags">
+              <span class="project-tag">CI/CD</span>
+              <span class="project-tag">GitHub Actions</span>
+              <span class="project-tag">Sigma</span>
+              <span class="project-tag">Detection as Code</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 17 -->
+        <div class="project-card" id="vuln-scanner">
+          <div class="project-difficulty">⭐⭐⭐⭐⭐⭐⭐ 7/10</div>
+          <div class="project-content">
+            <h3><a href="projects/vuln-scanner.html">Scanner de Vulnerabilidades do Zero</a></h3>
+            <p>Desenvolver ferramenta própria para descoberta de portas abertas e mapeamento de serviços para CVEs conhecidos. Simular funcionamento interno de ferramentas como Nessus.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Port Scanning</span>
+              <span class="project-tag">CVE Mapping</span>
+              <span class="project-tag">Networking</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 18 -->
+        <div class="project-card" id="opensource-tool">
+          <div class="project-difficulty">⭐⭐⭐⭐⭐⭐⭐ 7/10</div>
+          <div class="project-content">
+            <h3><a href="projects/opensource-security-tool.html">Ferramenta de Segurança Open Source</a></h3>
+            <p>Construir uma ferramenta funcional (parser de logs, enriquecedor de IOCs) e disponibilizá-la publicamente no GitHub. Ter estranhos a usar o teu código é prova superior a qualquer curso.</p>
+            <div class="project-tags">
+              <span class="project-tag">Python</span>
+              <span class="project-tag">Open Source</span>
+              <span class="project-tag">GitHub</span>
+              <span class="project-tag">DevOps</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 19 -->
+        <div class="project-card" id="cve">
+          <div class="project-difficulty">⭐ 4 a 100/10</div>
+          <div class="project-content">
+            <h3><a href="projects/cve-discovery.html">Encontrar e Divulgar uma Vulnerabilidade Real</a></h3>
+            <p>Identificar um bug real num software ou dispositivo IoT, passar pelo processo de divulgação responsável e obter um CVE em teu nome. O projeto de impacto máximo no currículo.</p>
+            <div class="project-tags">
+              <span class="project-tag">Bug Bounty</span>
+              <span class="project-tag">CVE</span>
+              <span class="project-tag">Responsible Disclosure</span>
+              <span class="project-tag">IoT</span>
+              <span class="project-tag">Fuzzing</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 20 -->
+        <div class="project-card" id="malware-re">
+          <div class="project-difficulty">⭐⭐⭐⭐⭐⭐⭐⭐⭐⭐ 10/10</div>
+          <div class="project-content">
+            <h3><a href="projects/malware-reverse-engineering.html">Engenharia Reversa de Malware</a></h3>
+            <p>Detonar amostra de malware em sandbox, analisar com Ghidra/IDA e escrever regras YARA ou Sigma para detetar essa ameaça específica. O pináculo da análise técnica.</p>
+            <div class="project-tags">
+              <span class="project-tag">Ghidra</span>
+              <span class="project-tag">IDA</span>
+              <span class="project-tag">YARA</span>
+              <span class="project-tag">Sandbox</span>
+              <span class="project-tag">Reverse Engineering</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <span class="copyright">&copy; 2026 Artur Filipe Custódia. Projetos baseados na lista do canal Mad Hat.</span>
+      <div class="social-links">
+        <a href="https://github.com/arturfilipe" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/artur-cust%C3%B3dia-417a65341/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:artur@arturfilipe.pt">Email</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

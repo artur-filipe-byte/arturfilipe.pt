@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Análise de Phishing — Projeto | Artur Filipe Custódia</title>
+  <meta name="description" content="Análise forense de emails de phishing: dissecção de headers, verificação SPF/DKIM/DMARC e identificação de IOCs." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🛡️</text></svg>" />
+</head>
+<body>
+
+  <nav>
+    <div class="container">
+      <a href="/" class="logo">artur<span>filipe</span>.pt</a>
+      <ul class="nav-links">
+        <li><a href="../index.html">CV</a></li>
+        <li><a href="../projects.html" class="active">Projetos</a></li>
+        <li><a href="../index.html#contact">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <div class="project-detail">
+
+        <a href="../projects.html" class="back-link">← Voltar aos Projetos</a>
+
+        <h1>Análise de E-mail de Phishing</h1>
+        <div class="meta">
+          <span>Dificuldade: ⭐⭐⭐ 3/10</span>
+          <span>Duração estimada: 1-2 dias</span>
+          <span>Estado: Em planeamento</span>
+        </div>
+
+        <div class="content">
+          <h2>Objetivo</h2>
+          <p>
+            Recolher amostras reais de e-mails de phishing e realizar análise forense completa: 
+            dissecar cabeçalhos (headers), verificar autenticação SPF/DKIM/DMARC, extrair URLs e IOCs, 
+            e documentar o processo. Para um <strong>primeiro dia num SOC</strong>, esta é a competência 
+            número 1 que vais usar.
+          </p>
+
+          <h2>Ferramentas</h2>
+          <ul>
+            <li><strong>Análise de Headers</strong> — raw email source, MessageHeader analysis</li>
+            <li><strong>mxToolbox</strong> — Verificação SPF/DKIM/DMARC</li>
+            <li><strong>VirusTotal</strong> — Verificação de URLs e anexos</li>
+            <li><strong>PhishTool</strong> — Plataforma de análise colaborativa</li>
+            <li><strong>Python</strong> — Scripts para extração automatizada de IOCs</li>
+          </ul>
+
+          <h2>O que vais aprender</h2>
+          <ul>
+            <li>Como ler e interpretar headers de email (Received, Message-ID, Authentication-Results)</li>
+            <li>Diferença entre SPF, DKIM e DMARC e como cada um previne spoofing</li>
+            <li>Como extrair indicadores de compromisso (IOCs) de um email</li>
+            <li>Técnicas comuns de engenharia social usadas em phishing</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <span class="copyright">&copy; 2026 Artur Filipe Custódia</span>
+      <div class="social-links">
+        <a href="https://github.com/arturfilipe" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://www.linkedin.com/in/artur-cust%C3%B3dia-417a65341/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="mailto:artur@arturfilipe.pt">Email</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
