@@ -636,6 +636,12 @@
       .nav-toggle { display: none !important; }
     }
   </style>
+  <script>
+    // Force HTTPS redirect
+    if (window.location.protocol !== 'https:' && window.location.hostname !== 'localhost') {
+      window.location.href = 'https://' + window.location.hostname + window.location.pathname + window.location.search;
+    }
+  </script>
 </head>
 <body>
 
