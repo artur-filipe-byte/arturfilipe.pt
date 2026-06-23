@@ -1,6 +1,6 @@
 # arturfilipe.pt — Portfolio de Cibersegurança
 
-Site pessoal de **Artur Filipe Custódia**, profissional em transição para cibersegurança.
+Site pessoal de **Artur Filipe**, profissional em transição para cibersegurança.
 
 ## ✨ Sobre
 
