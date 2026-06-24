@@ -1,20 +1,19 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Artur Filipe — IT & Cibersegurança</title>
-  <meta name="description" content="Portefólio de Artur Filipe — Profissional em transição para IT e Cibersegurança. CompTIA A+, Security+, CEH em curso. Lisboa, Portugal." />
-  <meta name="keywords" content="cibersegurança, IT, CompTIA, Security+, CEH, Lisboa, Portugal, homelab, Docker" />
-  <meta property="og:title" content="Artur Filipe — IT & Cibersegurança" />
-  <meta property="og:description" content="Portefólio e CV de Artur Filipe, profissional em transição para IT com certificações CompTIA e projetos práticos em cibersegurança." />
+  <title>Artur Filipe — IT & Cybersecurity</title>
+  <meta name="description" content="Portfolio of Artur Filipe — Professional transitioning to IT and Cybersecurity. CompTIA A+, Security+, pursuing CEH. Lisbon, Portugal." />
+  <meta name="keywords" content="cybersecurity, IT, CompTIA, Security+, CEH, Lisbon, Portugal, homelab, Docker" />
+  <meta property="og:title" content="Artur Filipe — IT & Cybersecurity" />
+  <meta property="og:description" content="Portfolio and CV of Artur Filipe, professional transitioning to IT with CompTIA certifications and hands-on cybersecurity projects." />
   <meta property="og:url" content="https://arturfilipe.work" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600;700&family=Inter:wght@300..700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
   <script src="https://unpkg.com/lucide@latest" defer></script>
   <style>
-    /* ==================== RESET & BASE ==================== */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --color-bg: #0f1117;
@@ -44,11 +43,7 @@
     a { color: var(--color-primary); text-decoration: none; transition: color 0.2s ease; }
     a:hover { color: var(--color-primary-hover); }
     img { max-width: 100%; height: auto; }
-    .container {
-      max-width: var(--max-width);
-      margin: 0 auto;
-      padding: 0 24px;
-    }
+    .container { max-width: var(--max-width); margin: 0 auto; padding: 0 24px; }
     .section { padding: 80px 0; }
     .section-header {
       font-family: 'Sora', sans-serif;
@@ -67,13 +62,9 @@
       height: 1px;
       background: linear-gradient(to right, var(--color-border), transparent);
     }
-
-    /* ==================== NAVIGATION ==================== */
     nav {
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
+      top: 0; left: 0; right: 0;
       z-index: 100;
       background: rgba(15,17,23,0.85);
       backdrop-filter: blur(12px) saturate(180%);
@@ -122,8 +113,6 @@
       transition: all 0.2s ease;
     }
     .nav-icon-link:hover { color: var(--color-primary); background: rgba(56,189,248,0.1); }
-
-    /* ==================== HERO ==================== */
     .hero {
       padding: 128px 0 64px;
       text-align: center;
@@ -225,8 +214,6 @@
       font-size: 0.8rem;
       font-family: 'JetBrains Mono', monospace;
     }
-
-    /* ==================== BIO CARD ==================== */
     .bio-card {
       background: var(--color-surface);
       border: 1px solid var(--color-border);
@@ -236,8 +223,6 @@
     }
     .bio-card p { margin-bottom: 20px; color: var(--color-text); font-size: 1rem; line-height: 1.8; }
     .bio-card p:last-child { margin-bottom: 0; }
-
-    /* ==================== PROJECT CARDS ==================== */
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -306,8 +291,6 @@
       border: 1px solid rgba(56,189,248,0.2);
       color: var(--color-text-muted);
     }
-
-    /* ==================== TIMELINE ==================== */
     .timeline {
       display: flex;
       flex-direction: column;
@@ -375,8 +358,6 @@
     }
     .timeline-item .role { color: var(--color-text-muted); font-size: 0.875rem; margin-bottom: 12px; }
     .timeline-item p { color: var(--color-text); font-size: 0.875rem; line-height: 1.7; }
-
-    /* ==================== CERTIFICATIONS ==================== */
     .cert-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -457,8 +438,6 @@
       transition: all 0.2s ease;
     }
     .cert-card .cert-link a:hover { color: var(--color-primary-hover); }
-
-    /* ==================== SKILLS ==================== */
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -499,8 +478,6 @@
       background: var(--color-primary);
       opacity: 0.5;
     }
-
-    /* ==================== CONTACT ==================== */
     .contact-card {
       background: var(--color-surface);
       border: 1px solid var(--color-border);
@@ -555,8 +532,6 @@
       color: var(--color-primary);
       background: rgba(56,189,248,0.05);
     }
-
-    /* ==================== FOOTER ==================== */
     footer {
       border-top: 1px solid var(--color-border);
       padding: 32px 0;
@@ -578,15 +553,12 @@
       transition: color 0.2s ease;
     }
     footer .social-links a:hover { color: var(--color-primary); }
-
-    /* ==================== RESPONSIVE ==================== */
     @media (max-width: 868px) {
       nav .container { position: relative; }
       .nav-links {
         position: fixed;
         top: var(--nav-height);
-        left: 0;
-        right: 0;
+        left: 0; right: 0;
         flex-direction: column;
         background: rgba(15,17,23,0.98);
         backdrop-filter: blur(12px);
@@ -603,8 +575,7 @@
         display: flex !important;
         align-items: center;
         justify-content: center;
-        width: 36px;
-        height: 36px;
+        width: 36px; height: 36px;
         border-radius: 8px;
         background: transparent;
         border: 1px solid var(--color-border);
@@ -637,7 +608,6 @@
     }
   </style>
   <script>
-    // Force HTTPS redirect
     if (window.location.protocol !== 'https:' && window.location.hostname !== 'localhost') {
       window.location.href = 'https://' + window.location.hostname + window.location.pathname + window.location.search;
     }
@@ -645,16 +615,16 @@
 </head>
 <body>
 
-  <!-- ==================== NAVIGATION ==================== -->
+  <!-- NAVIGATION -->
   <nav>
     <div class="container">
-      <a href="#" class="nav-logo">Artur <span>Filipe</span></a>
+      <a href="index-en.html" class="nav-logo">Artur <span>Filipe</span></a>
       <ul class="nav-links" id="navLinks">
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#projetos">Projetos</a></li>
-        <li><a href="#experiencia">Experiencia</a></li>
-        <li><a href="#certificacoes">Certificacoes</a></li>
-        <li><a href="projects.html">Docs</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="projects-en.html">Docs</a></li>
         <li>
           <a href="https://github.com/artur-filipe-byte/homelab-docs" target="_blank" rel="noopener noreferrer" class="nav-icon-link" title="Homelab Docs" style="display:flex;align-items:center;gap:4px;padding:6px 12px;">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
@@ -662,14 +632,14 @@
           </a>
         </li>
         <li>
-          <a href="./cv-artur-filipe.pdf" target="_blank" rel="noopener noreferrer" class="nav-icon-link" title="Descarregar CV">
+          <a href="./cv-artur-filipe.pdf" target="_blank" rel="noopener noreferrer" class="nav-icon-link" title="Download CV">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
             CV
           </a>
         </li>
         <li>
-          <a href="index-en.html" class="nav-icon-link" title="English version" style="font-family:'JetBrains Mono',monospace;font-size:0.75rem;font-weight:500;">
-            EN
+          <a href="index.html" class="nav-icon-link" title="Versao portuguesa" style="font-family:'JetBrains Mono',monospace;font-size:0.75rem;font-weight:500;">
+            PT
           </a>
         </li>
       </ul>
@@ -679,59 +649,59 @@
     </div>
   </nav>
 
-  <!-- ==================== HERO ==================== -->
-  <section class="hero" id="topo">
+  <!-- HERO -->
+  <section class="hero" id="top">
     <div class="container">
       <div class="hero-badges">
         <span class="badge badge-primary">CompTIA A+</span>
         <span class="badge badge-primary">CompTIA Security+</span>
-        <span class="badge">CEH (em curso)</span>
+        <span class="badge">CEH (in progress)</span>
       </div>
       <h1>Artur Filipe</h1>
-      <p class="tagline">Profissional em transição para IT</p>
+      <p class="tagline">Professional transitioning to IT</p>
       <div class="hero-buttons">
-        <a href="projects.html" class="btn btn-primary">Ver Projetos</a>
+        <a href="projects-en.html" class="btn btn-primary">View Projects</a>
         <a href="./cv-artur-filipe.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Descarregar CV
+          Download CV
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ==================== SOBRE MIM ==================== -->
-  <section class="section" id="sobre">
+  <!-- ABOUT ME -->
+  <section class="section" id="about">
     <div class="container">
-      <h2 class="section-header">Sobre Mim</h2>
+      <h2 class="section-header">About Me</h2>
       <div class="bio-card">
         <p>
-          Estive 13 anos na receção de um hotel e lidei com todo o tipo de pessoas, pressão,
-          e problemas para resolver em tempo real. Foi durante esse tempo que comecei a estudar
-          cibersegurança por curiosidade e acabei por descobrir que era isto que queria fazer.
+          I spent 13 years at a hotel reception desk, dealing with all kinds of people, pressure,
+          and problems that needed solving in real time. During that time I started studying
+          cybersecurity out of curiosity and eventually realized this was what I wanted to do.
         </p>
         <p>
-          Sempre gostei de IT, de perceber como as coisas funcionam por trás do ecrã.
-          Hoje estou a fazer a transição para a area, certificado pela CompTIA (A+ e Security+),
-          e a estudar CEH e ISO 27001.
+          I have always liked IT, understanding how things work behind the screen.
+          Today I am making the career transition, certified by CompTIA (A+ and Security+),
+          and studying CEH and ISO 27001.
         </p>
         <p>
-          Fora dos cursos, passo tempo no meu homelab a montar servidores, a automatizar tarefas com
-          Python e Telegram bots, e a documentar tudo o que descubro.
+          Outside of courses, I spend time in my homelab setting up servers, automating tasks with
+          Python and Telegram bots, and documenting everything I discover.
         </p>
       </div>
     </div>
   </section>
 
-  <!-- ==================== PROJETOS PRÁTICOS ==================== -->
-  <section class="section" id="projetos">
+  <!-- PROJECTS -->
+  <section class="section" id="projects">
     <div class="container">
-      <h2 class="section-header">Projetos Práticos</h2>
+      <h2 class="section-header">Hands-on Projects</h2>
       <div class="projects-grid">
 
         <div class="project-card">
-          <span class="project-status status-prod">⚡ Em produção</span>
-          <h3>Homelab de Cibersegurança</h3>
-          <p>Infraestrutura com pfSense como firewall, Suricata IDS/IPS e Elastic Stack como SIEM. Monitorização de tráfego de rede em tempo real com alertas configurados e dashboards personalizados.</p>
+          <span class="project-status status-prod">In production</span>
+          <h3>Cybersecurity Homelab</h3>
+          <p>Infrastructure with pfSense firewall, Suricata IDS/IPS and Elastic Stack as SIEM. Real-time network traffic monitoring with custom alerts and dashboards.</p>
           <div class="project-tags">
             <span class="project-tag">pfSense</span>
             <span class="project-tag">Suricata</span>
@@ -742,9 +712,9 @@
         </div>
 
         <div class="project-card">
-          <span class="project-status status-prod">⚡ Em produção</span>
-          <h3>Infraestrutura Self-Hosted com Docker</h3>
-          <p>Servidor home com múltiplos serviços em Docker Compose: Nextcloud, Pi-hole, Portainer. Scripts de backup automático e monitorização de containers em ambiente Linux.</p>
+          <span class="project-status status-prod">In production</span>
+          <h3>Self-Hosted Infrastructure with Docker</h3>
+          <p>Home server with multiple Docker Compose services: Nextcloud, Pi-hole, Portainer. Automated backup scripts and container monitoring on Linux.</p>
           <div class="project-tags">
             <span class="project-tag">Docker</span>
             <span class="project-tag">Docker Compose</span>
@@ -755,9 +725,9 @@
         </div>
 
         <div class="project-card">
-          <span class="project-status status-dev">🔧 Em desenvolvimento</span>
-          <h3>Telegram Bot de Monitorização</h3>
-          <p>Bot em Python para alertas automáticos de estado de serviços do homelab. Integração com APIs REST e notificações personalizadas através do Telegram.</p>
+          <span class="project-status status-dev">In development</span>
+          <h3>Telegram Monitoring Bot</h3>
+          <p>Python bot for automated service status alerts from the homelab. Integrates with REST APIs and sends custom notifications through Telegram.</p>
           <div class="project-tags">
             <span class="project-tag">Python</span>
             <span class="project-tag">Telegram Bot API</span>
@@ -769,42 +739,42 @@
       </div>
 
       <div style="text-align:center;margin-top:28px;">
-        <a href="projects.html" class="btn btn-outline">
+        <a href="projects-en.html" class="btn btn-outline">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-          Ver documentacao completa
+          View full documentation
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ==================== EXPERIÊNCIA PROFISSIONAL ==================== -->
-  <section class="section" id="experiencia">
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
     <div class="container">
-      <h2 class="section-header">Experiência Profissional</h2>
+      <h2 class="section-header">Professional Experience</h2>
       <div class="timeline">
 
         <div class="timeline-item">
-          <span class="period">2026 — Presente</span>
-          <h3>Transição para IT</h3>
-          <div class="role">Estudo e Projetos Práticos</div>
+          <span class="period">2026 — Present</span>
+          <h3>Transition to IT</h3>
+          <div class="role">Study and Hands-on Projects</div>
           <p>
-            Dedicado em full-time ao estudo e construção de projetos práticos em IT.
-            A completar CEH e ISO 27001 enquanto desenvolvo um homelab com pfSense, Suricata IDS/IPS,
-            SIEM (Elastic), e automação de threat intelligence. Documentação rigorosa de cada projeto
-            como prova de competência técnica.
+            Full-time dedication to studying and building hands-on IT projects.
+            Completing CEH and ISO 27001 while developing a homelab with pfSense, Suricata IDS/IPS,
+            Elastic SIEM, and threat intelligence automation. Rigorous documentation of each project
+            as proof of technical competence.
           </p>
         </div>
 
         <div class="timeline-item">
           <span class="period">2013 — 2026</span>
-          <h3>Hotelaria — Receção</h3>
-          <div class="role">Rececionista de Primeira</div>
+          <h3>Hospitality — Front Desk</h3>
+          <div class="role">First Receptionist</div>
           <p>
-            Resolução de conflitos e incidentes em tempo real, passei formação a colaboradores, coordenação
-            entre departamentos, e manutenção de registos precisos. Experiência em sistemas de
-            gestão hoteleira (PMS) e ferramentas de produtividade Microsoft Office.
-            Desenvolvi uma capacidade única de traduzir problemas complexos em soluções claras
-            para diferentes audiências.
+            Conflict and incident resolution in real time, trained team members, coordination
+            between departments, and accurate record keeping. Experience with hotel management
+            systems (PMS) and Microsoft Office productivity tools.
+            Developed a unique ability to translate complex problems into clear solutions
+            for different audiences.
           </p>
         </div>
 
@@ -812,30 +782,30 @@
     </div>
   </section>
 
-  <!-- ==================== CERTIFICAÇÕES ==================== -->
-  <section class="section" id="certificacoes">
+  <!-- CERTIFICATIONS -->
+  <section class="section" id="certifications">
     <div class="container">
-      <h2 class="section-header">Certificações</h2>
+      <h2 class="section-header">Certifications</h2>
       <div class="cert-grid">
 
         <!-- CompTIA A+ -->
         <div class="cert-card">
           <div class="cert-header">
-            <div class="cert-icon">🖥️</div>
+            <div class="cert-icon">PC</div>
             <div class="cert-info">
               <h4>CompTIA A+</h4>
-              <div class="issuer">CompTIA — Foundation em hardware, SO, redes e suporte técnico</div>
+              <div class="issuer">CompTIA — Hardware, OS, networking and technical support foundation</div>
             </div>
           </div>
           <div class="cert-meta">
-            <span class="cert-badge cert-badge-completed">✔ Concluída</span>
-            <span style="font-size:0.75rem;color:var(--color-text-muted);font-family:'JetBrains Mono',monospace;">Fev 2026</span>
+            <span class="cert-badge cert-badge-completed">Completed</span>
+            <span style="font-size:0.75rem;color:var(--color-text-muted);font-family:'JetBrains Mono',monospace;">Feb 2026</span>
             <span style="font-size:0.75rem;color:var(--color-text-muted);font-family:'JetBrains Mono',monospace;">—</span>
-            <span style="font-size:0.75rem;color:var(--color-text-muted);font-family:'JetBrains Mono',monospace;">Validade: Fev 2029</span>
+            <span style="font-size:0.75rem;color:var(--color-text-muted);font-family:'JetBrains Mono',monospace;">Expires: Feb 2029</span>
           </div>
           <div class="cert-link">
             <a href="./assets/certs/comptia-a-plus.pdf" target="_blank" rel="noopener noreferrer">
-              Verificar credencial
+              Verify credential
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
@@ -844,21 +814,21 @@
         <!-- CompTIA Security+ -->
         <div class="cert-card">
           <div class="cert-header">
-            <div class="cert-icon">🔒</div>
+            <div class="cert-icon">Lock</div>
             <div class="cert-info">
               <h4>CompTIA Security+</h4>
-              <div class="issuer">CompTIA — Segurança de redes, gestão de risco e criptografia</div>
+              <div class="issuer">CompTIA — Network security, risk management and cryptography</div>
             </div>
           </div>
           <div class="cert-meta">
-            <span class="cert-badge cert-badge-completed">✔ Concluída</span>
+            <span class="cert-badge cert-badge-completed">Completed</span>
             <span style="font-size:0.75rem;color:var(--color-text-muted);font-family:'JetBrains Mono',monospace;">Mar 2026</span>
             <span style="font-size:0.75rem;color:var(--color-text-muted);font-family:'JetBrains Mono',monospace;">—</span>
-            <span style="font-size:0.75rem;color:var(--color-text-muted);font-family:'JetBrains Mono',monospace;">Validade: Mar 2029</span>
+            <span style="font-size:0.75rem;color:var(--color-text-muted);font-family:'JetBrains Mono',monospace;">Expires: Mar 2029</span>
           </div>
           <div class="cert-link">
             <a href="./assets/certs/comptia-security-plus.pdf" target="_blank" rel="noopener noreferrer">
-              Verificar credencial
+              Verify credential
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
@@ -867,68 +837,68 @@
         <!-- CEH -->
         <div class="cert-card">
           <div class="cert-header">
-            <div class="cert-icon">🎯</div>
+            <div class="cert-icon">Target</div>
             <div class="cert-info">
               <h4>CEH — Certified Ethical Hacker</h4>
-              <div class="issuer">EC-Council — Ethical hacking, penetration testing, vetores de ataque</div>
+              <div class="issuer">EC-Council — Ethical hacking, penetration testing, attack vectors</div>
             </div>
           </div>
           <div class="cert-meta">
-            <span class="cert-badge cert-badge-progress">⏳ Em curso</span>
+            <span class="cert-badge cert-badge-progress">In progress</span>
           </div>
         </div>
 
         <!-- ISO 27001 -->
         <div class="cert-card">
           <div class="cert-header">
-            <div class="cert-icon">📋</div>
+            <div class="cert-icon">Docs</div>
             <div class="cert-info">
-              <h4>ISO/IEC 27001 — Fundamentos</h4>
-              <div class="issuer">Exemplar Global — Sistemas de Gestão de Segurança da Informação</div>
+              <h4>ISO/IEC 27001 — Foundations</h4>
+              <div class="issuer">Exemplar Global — Information Security Management Systems</div>
             </div>
           </div>
           <div class="cert-meta">
-            <span class="cert-badge cert-badge-progress">⏳ Em curso</span>
+            <span class="cert-badge cert-badge-progress">In progress</span>
           </div>
         </div>
 
         <!-- Claranet -->
         <div class="cert-card">
           <div class="cert-header">
-            <div class="cert-icon">📘</div>
+            <div class="cert-icon">Book</div>
             <div class="cert-info">
-              <h4>Introdução à Cibersegurança</h4>
-              <div class="issuer">Claranet / Formação Profissional</div>
+              <h4>Introduction to Cybersecurity</h4>
+              <div class="issuer">Claranet / Professional Training</div>
             </div>
           </div>
           <div class="cert-meta">
-            <span class="cert-badge cert-badge-completed">✔ Concluída</span>
+            <span class="cert-badge cert-badge-completed">Completed</span>
             <span style="font-size:0.75rem;color:var(--color-text-muted);font-family:'JetBrains Mono',monospace;">Jun 2026</span>
           </div>
           <div class="cert-link">
             <a href="./assets/certs/claranet-ciberseguranca.pdf" target="_blank" rel="noopener noreferrer">
-              Verificar credencial
+              Verify credential
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
         </div>
 
-        <!-- TryHackMe Cyber Security 101 -->
+        <!-- TryHackMe -->
         <div class="cert-card">
           <div class="cert-header">
-            <div class="cert-icon">🟢</div>
+            <div class="cert-icon">THM</div>
             <div class="cert-info">
               <h4>Cyber Security 101</h4>
               <div class="issuer">TryHackMe</div>
             </div>
           </div>
           <div class="cert-meta">
-            <span class="cert-badge cert-badge-completed">✔ Concluída</span>
+            <span class="cert-badge cert-badge-completed">Completed</span>
             <span style="font-size:0.75rem;color:var(--color-text-muted);font-family:'JetBrains Mono',monospace;">Jan 2026</span>
           </div>
           <div class="cert-link">
             <a href="./assets/certs/tryhackme-cyber101.pdf" target="_blank" rel="noopener noreferrer">
-              Verificar credencial
+              Verify credential
               <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
             </a>
           </div>
@@ -938,35 +908,35 @@
     </div>
   </section>
 
-  <!-- ==================== COMPETÊNCIAS TÉCNICAS ==================== -->
-  <section class="section" id="competencias">
+  <!-- TECHNICAL SKILLS -->
+  <section class="section" id="skills">
     <div class="container">
-      <h2 class="section-header">Competências Técnicas</h2>
+      <h2 class="section-header">Technical Skills</h2>
       <div class="skills-grid">
 
         <div class="skill-category">
-          <h3>🔐 Segurança</h3>
+          <h3>Security</h3>
           <ul class="skill-list">
             <li>Network security, vulnerability assessment</li>
             <li>IDS/IPS: Suricata</li>
             <li>SIEM: Elastic Stack (Elasticsearch, Kibana, Logstash)</li>
             <li>Threat intelligence, log analysis</li>
-            <li>CompTIA Security+ | CEH (em curso)</li>
+            <li>CompTIA Security+ | CEH (in progress)</li>
           </ul>
         </div>
 
         <div class="skill-category">
-          <h3>🌐 Redes & Sistemas</h3>
+          <h3>Networking & Systems</h3>
           <ul class="skill-list">
             <li>TCP/IP, DNS, DHCP, VLANs, firewall rules</li>
             <li>pfSense, Linux (Ubuntu/Debian), Windows Server</li>
             <li>SSH, Wireshark, Nmap</li>
-            <li>Virtualização: Proxmox, VirtualBox</li>
+            <li>Virtualization: Proxmox, VirtualBox</li>
           </ul>
         </div>
 
         <div class="skill-category">
-          <h3>⚙️ Ferramentas & Automação</h3>
+          <h3>Tools & Automation</h3>
           <ul class="skill-list">
             <li>Docker, Docker Compose</li>
             <li>Python scripting, Telegram bots</li>
@@ -976,11 +946,11 @@
         </div>
 
         <div class="skill-category">
-          <h3>📊 GRC & Processos</h3>
+          <h3>GRC & Processes</h3>
           <ul class="skill-list">
-            <li>ISO/IEC 27001 fundamentos (em curso)</li>
-            <li>Documentação de processos e incidentes</li>
-            <li>Gestão de risco básica</li>
+            <li>ISO/IEC 27001 foundations (in progress)</li>
+            <li>Process and incident documentation</li>
+            <li>Basic risk management</li>
           </ul>
         </div>
 
@@ -988,36 +958,36 @@
     </div>
   </section>
 
-  <!-- ==================== SOFT SKILLS ==================== -->
+  <!-- SOFT SKILLS -->
   <section class="section" id="softskills">
     <div class="container">
       <h2 class="section-header">Soft Skills</h2>
       <div class="skills-grid">
 
         <div class="skill-category">
-          <h3>🧠 Mentalidade</h3>
+          <h3>Mindset</h3>
           <ul class="skill-list">
-            <li>Resolução de problemas em tempo real (13 anos em hotelaria)</li>
-            <li>Aprendizagem contínua e autodidatismo</li>
-            <li>Calma sob pressão e gestão de incidentes</li>
+            <li>Real-time problem solving (13 years in hospitality)</li>
+            <li>Continuous learning and self-study</li>
+            <li>Calm under pressure and incident management</li>
           </ul>
         </div>
 
         <div class="skill-category">
-          <h3>🤝 Comunicação</h3>
+          <h3>Communication</h3>
           <ul class="skill-list">
-            <li>Traduzir linguagem técnica para não-técnicos</li>
-            <li>Gestão de clientes e stakeholders</li>
-            <li>Documentação clara e objetiva</li>
+            <li>Translating technical language for non-technical audiences</li>
+            <li>Client and stakeholder management</li>
+            <li>Clear and objective documentation</li>
           </ul>
         </div>
 
         <div class="skill-category">
-          <h3>📁 Organização</h3>
+          <h3>Organization</h3>
           <ul class="skill-list">
-            <li>Gestão de múltiplas tarefas em simultâneo</li>
-            <li>Registo e documentação de processos</li>
-            <li>Atenção ao detalhe em ambientes críticos</li>
+            <li>Managing multiple simultaneous tasks</li>
+            <li>Process recording and documentation</li>
+            <li>Attention to detail in critical environments</li>
           </ul>
         </div>
 
@@ -1025,12 +995,12 @@
     </div>
   </section>
 
-  <!-- ==================== CONTACTO ==================== -->
-  <section class="section" id="contacto">
+  <!-- CONTACT -->
+  <section class="section" id="contact">
     <div class="container">
-      <h2 class="section-header">Contacto</h2>
+      <h2 class="section-header">Contact</h2>
       <div class="contact-card">
-        <p>Estou disponível para vagas IT. Vamos conversar.</p>
+        <p>I am available for IT opportunities. Let's talk.</p>
         <div class="contact-links">
           <a href="mailto:artur.a.filipe@protonmail.com" class="contact-email">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
@@ -1050,18 +1020,18 @@
         <div style="margin-top: 20px;">
           <a href="./cv-artur-filipe.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-            Descarregar CV (PDF)
+            Download CV (PDF)
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ==================== FOOTER ==================== -->
+  <!-- FOOTER -->
   <footer>
     <div class="container">
       <div>
-        <p>Disponível para novas oportunidades</p>
+        <p>Open for new opportunities</p>
       </div>
       <div class="social-links">
         <a href="mailto:artur.a.filipe@protonmail.com">Email</a>
@@ -1072,14 +1042,11 @@
   </footer>
 
   <script>
-    // Close mobile nav on link click
     document.querySelectorAll('.nav-links a').forEach(function(link) {
       link.addEventListener('click', function() {
         document.getElementById('navLinks').classList.remove('open');
       });
     });
-
-    // Smooth scroll offset for fixed nav
     document.querySelectorAll('a[href^="#"]').forEach(function(anchor) {
       anchor.addEventListener('click', function(e) {
         var target = document.querySelector(this.getAttribute('href'));
