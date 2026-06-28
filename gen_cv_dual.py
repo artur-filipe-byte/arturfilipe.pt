@@ -176,63 +176,63 @@ def make_cv(filename, lang):
         c.drawCentredString(W/2, 1.5*cm, 'CV updated June 2026  |  arturfilipe.work')
 
     else:  # PT
-        y = draw_header(c, y, 'Profissional IT & Ciberseguranca')
+        y = draw_header(c, y, 'Profissional IT & Ciberseguran\u00e7a')
         y = draw_section(c, y, 'PERFIL PROFISSIONAL')
         c.setFont('CR', 9)
         c.setFillColor(PRETO)
-        for linha in wrap(c, 'Profissional em transicao para IT e ciberseguranca com certificacoes CompTIA A+ e Security+. Construo projetos praticos no meu homelab (pfSense, Suricata, Elastic SIEM, Docker, Pi-hole) e documento tudo no GitHub. 13 anos de experiencia em atendimento ao cliente desenvolveram capacidades fortes de gestao de incidentes, comunicacao e resolucao de problemas aplicadas diariamente em projetos IT.', 9, CW):
+        for linha in wrap(c, 'Profissional em transi\u00e7\u00e3o para IT e ciberseguran\u00e7a com certifica\u00e7\u00f5es CompTIA A+ e Security+. Construo projetos pr\u00e1ticos no meu homelab (pfSense, Suricata, Elastic SIEM, Docker, Pi-hole) e documento tudo no GitHub. 13 anos de experi\u00eancia em atendimento ao cliente desenvolveram capacidades fortes de gest\u00e3o de incidentes, comunica\u00e7\u00e3o e resolu\u00e7\u00e3o de problemas aplicadas diariamente em projetos IT.', 9, CW):
             c.drawString(M, y, linha); y -= 11
         y -= 8
 
-        y = draw_section(c, y, 'CERTIFICACOES')
-        for t, s, d in [('CompTIA A+ (770)', 'CompTIA - Hardware, SO, redes e suporte tecnico', 'Fev 2026'),
-                         ('CompTIA Security+', 'CompTIA - Seguranca de redes, gestao de risco, criptografia', 'Mar 2026'),
-                         ('Introducao a Ciberseguranca', 'Claranet / Formacao Profissional', 'Jun 2026'),
+        y = draw_section(c, y, 'CERTIFICA\u00c7\u00d5ES')
+        for t, s, d in [('CompTIA A+ (770)', 'CompTIA - Hardware, SO, redes e suporte t\u00e9cnico', 'Fev 2026'),
+                         ('CompTIA Security+', 'CompTIA - Seguran\u00e7a de redes, gest\u00e3o de risco, criptografia', 'Mar 2026'),
+                         ('Introdu\u00e7\u00e3o \u00e0 Ciberseguran\u00e7a', 'Claranet / Forma\u00e7\u00e3o Profissional', 'Jun 2026'),
                          ('Cyber Security 101', 'TryHackMe', 'Jan 2026')]:
             y = draw_entry(c, y, t, s, d)
         y -= 4
 
-        y = draw_section(c, y, 'EXPERIENCIA PROFISSIONAL')
+        y = draw_section(c, y, 'EXPERI\u00caNCIA PROFISSIONAL')
         for t, s, p, bs in [
-            ('Transicao para IT', 'Estudo e Projetos Praticos', '2026 - Presente',
+            ('Transi\u00e7\u00e3o para IT', 'Estudo e Projetos Pr\u00e1ticos', '2026 - Presente',
              ['Homelab com pfSense, Suricata IDS/IPS, SIEM Elastic, Pi-hole, Docker e Cloudflare',
-              'Automacao Python: scripts backup, bots Telegram, integracoes API',
-              'Documentacao rigorosa no GitHub; portfolio em arturfilipe.work']),
-            ('Casa do Vale Hotel - Rececao', 'Rececionista de 1a | Evora, Portugal', '2019 - 2026',
-             ['Ciclo completo do hospede: check-in/out, faturacao, reservas online (Booking, Expedia)',
-              'Coordenacao turnos, formacao, conformidade RGPD, controlo acesso, documentacao incidentes',
-              'Atendimento em portugues e ingles (presencial e telefonico)']),
-            ('Hotel Dom Fernando - Rececao', 'Rececionista | Evora, Portugal', '2013 - 2019',
-             ['Promovido a Rececionista de 1a. Atendimento cliente, reservas, faturacao, incidencias',
-              'Comunicacao intercultural e coordenacao interdepartamental']),
-            ('Operador Call Center', 'Reditus - Assistencia Viagem | Evora, Portugal', '2013 - 2014',
-             ['Apoio telefonico PT/EN para seguros de viagem e emergencias']),
+              'Automa\u00e7\u00e3o Python: scripts backup, bots Telegram, integra\u00e7\u00f5es API',
+              'Documenta\u00e7\u00e3o rigorosa no GitHub; portfolio em arturfilipe.work']),
+            ('Casa do Vale Hotel - Rece\u00e7\u00e3o', 'Rececionista de 1a | \u00c9vora, Portugal', '2019 - 2026',
+             ['Ciclo completo do h\u00f3spede: check-in/out, fatura\u00e7\u00e3o, reservas online (Booking, Expedia)',
+              'Coordena\u00e7\u00e3o turnos, forma\u00e7\u00e3o, conformidade RGPD, controlo acesso, documenta\u00e7\u00e3o incidentes',
+              'Atendimento em portugu\u00eas e ingl\u00eas (presencial e telef\u00f3nico)']),
+            ('Hotel Dom Fernando - Rece\u00e7\u00e3o', 'Rececionista | \u00c9vora, Portugal', '2013 - 2019',
+             ['Promovido a Rececionista de 1a. Atendimento cliente, reservas, fatura\u00e7\u00e3o, incid\u00eancias',
+              'Comunica\u00e7\u00e3o intercultural e coordena\u00e7\u00e3o interdepartamental']),
+            ('Operador Call Center', 'Reditus - Assist\u00eancia Viagem | \u00c9vora, Portugal', '2013 - 2014',
+             ['Apoio telef\u00f3nico PT/EN para seguros de viagem e emerg\u00eancias']),
         ]:
             y = draw_entry(c, y, t, s, p)
             y = draw_bullets(c, y, bs)
             y -= 4
 
-        y = draw_section(c, y, 'COMPETENCIAS TECNICAS')
+        y = draw_section(c, y, 'COMPET\u00caNCIAS T\u00c9CNICAS')
         y = draw_skills(c, y, [
-            ('Seguranca:', 'Network security, IDS/IPS (Suricata), SIEM (Elastic Stack), threat intel'),
+            ('Seguran\u00e7a:', 'Network security, IDS/IPS (Suricata), SIEM (Elastic Stack), threat intel'),
             ('Redes:', 'TCP/IP, DNS, DHCP, VLANs, pfSense, firewall rules, Wireshark, Nmap'),
             ('Sistemas:', 'Linux (Ubuntu/Debian), Windows Server, Proxmox, VirtualBox'),
             ('Ferramentas:', 'Docker, Docker Compose, Python, Bash, Git, Cloudflare, Nextcloud, Pi-hole'),
         ])
         y -= 4
 
-        y = draw_section(c, y, 'FORMACAO')
+        y = draw_section(c, y, 'FORMA\u00c7\u00c3O')
         for t, s, d in [
-            ('Curso de Ciberseguranca', 'ISCTE - Instituto Universitario de Lisboa', 'Nov 2025 - Jul 2026'),
-            ('Licenciatura Relacoes Internacionais', 'Universidade de Evora', '2012 - 2015'),
-            ('Curso Profissional Turismo', 'Escola Secundaria Severim Faria, Evora', '2009 - 2011'),
+            ('Curso de Ciberseguran\u00e7a', 'ISCTE - Instituto Universit\u00e1rio de Lisboa', 'Nov 2025 - Jul 2026'),
+            ('Licenciatura Rela\u00e7\u00f5es Internacionais', 'Universidade de \u00c9vora', '2012 - 2015'),
+            ('Curso Profissional Turismo', 'Escola Secund\u00e1ria Severim Faria, \u00c9vora', '2009 - 2011'),
         ]:
             y = draw_entry(c, y, t, s, d)
 
         y = draw_section(c, y, 'IDIOMAS') if y > 8*cm else y
         c.setFont('CR', 9)
         c.setFillColor(PRETO)
-        c.drawString(M, y, 'Portugues: Nativo  |  Ingles: Avancado (C1)')
+        c.drawString(M, y, 'Portugu\u00eas: Nativo  |  Ingl\u00eas: Avan\u00e7ado (C1)')
 
         c.setFont('CR', 7)
         c.setFillColor(CINZA_CLARO)
