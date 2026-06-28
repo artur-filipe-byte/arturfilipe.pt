@@ -291,6 +291,23 @@
       border: 1px solid rgba(56,189,248,0.2);
       color: var(--color-text-muted);
     }
+    .project-docs-link {
+      display: inline-block;
+      margin-top: 14px;
+      padding: 6px 14px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      border-radius: 6px;
+      background: rgba(56,189,248,0.1);
+      border: 1px solid rgba(56,189,248,0.25);
+      color: var(--color-primary);
+      text-decoration: none;
+      transition: all 0.2s ease;
+    }
+    .project-docs-link:hover {
+      background: rgba(56,189,248,0.2);
+      border-color: var(--color-primary);
+    }
     .timeline {
       display: flex;
       flex-direction: column;
@@ -712,6 +729,7 @@
             <span class="project-tag">Kibana</span>
             <span class="project-tag">Logstash</span>
           </div>
+          <a href="https://github.com/artur-filipe-byte/homelab-docs/blob/main/en/security-homelab-pfsense-suricata-elastic.md" target="_blank" rel="noopener noreferrer" class="project-docs-link">📖 Documentation</a>
         </div>
 
         <div class="project-card">
@@ -742,6 +760,7 @@
             <span class="project-tag">pfSense</span>
             <span class="project-tag">DHCP</span>
           </div>
+          <a href="https://github.com/artur-filipe-byte/homelab-docs/blob/main/en/pi-hole-docker.md" target="_blank" rel="noopener noreferrer" class="project-docs-link">📖 Documentation</a>
         </div>
 
       </div>
