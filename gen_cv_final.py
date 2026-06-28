@@ -203,10 +203,11 @@ skills_data = [
 for label, valor in skills_data:
     c.setFont('CB', 9)
     c.setFillColor(PRETO)
+    larg_label = c.stringWidth(label, 'CB', 9)
     c.drawString(M, y, label)
     c.setFont('CR', 8.5)
     c.setFillColor(PRETO)
-    c.drawString(M + 42, y, valor)
+    c.drawString(M + larg_label + 5, y, valor)
     y -= 13
 y -= 4
 
