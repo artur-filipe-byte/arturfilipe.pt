@@ -36,15 +36,11 @@ def wrap(c, texto, tam, largura):
     if cur: linhas.append(cur)
     return linhas
 
-def draw_header(c, y, subtitle):
+def draw_header(c, y):
     c.setFont('CB', 22)
     c.setFillColor(PRETO)
     c.drawCentredString(W/2, y, 'ARTUR FILIPE')
     y -= 26
-    c.setFont('CR', 11)
-    c.setFillColor(AZUL)
-    c.drawCentredString(W/2, y, subtitle)
-    y -= 18
     c.setFont('CR', 8)
     c.setFillColor(CINZA)
     c.drawCentredString(W/2, y, 'Evora, Portugal  |  artur.a.filipe@protonmail.com  |  +351 968 856 700')
@@ -113,7 +109,7 @@ def make_cv(filename, lang):
     y = H - M
 
     if lang == 'en':
-        y = draw_header(c, y, 'IT & Cybersecurity Professional')
+        y = draw_header(c, y)
         y = draw_section(c, y, 'PROFESSIONAL PROFILE')
         c.setFont('CR', 9)
         c.setFillColor(PRETO)
@@ -176,7 +172,7 @@ def make_cv(filename, lang):
         c.drawCentredString(W/2, 1.5*cm, 'CV updated June 2026  |  arturfilipe.work')
 
     else:  # PT
-        y = draw_header(c, y, 'Profissional IT & Ciberseguran\u00e7a')
+        y = draw_header(c, y)
         y = draw_section(c, y, 'PERFIL PROFISSIONAL')
         c.setFont('CR', 9)
         c.setFillColor(PRETO)
