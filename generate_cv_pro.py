@@ -144,13 +144,13 @@ def draw_cv(c, lang='pt'):
     
     profile_text = (
         'Profissional em transição para IT e cibersegurança com certificações CompTIA A+ e Security+. '
-        'Construo projetos práticos no meu homelab (servidores, redes, firewall, SIEM) e documento tudo '
+        'Construo projetos práticos no meu homelab (servidores, redes, firewall) e documento tudo '
         'como prova de competência técnica. 13 anos de experiência em atendimento ao cliente '
         'desenvolveram capacidades fortes de gestão de incidentes, comunicação clara e resolução rápida '
         'de problemas, aplicadas diariamente nos projetos IT.'
     ) if lang == 'pt' else (
         'Professional transitioning to IT and cybersecurity with CompTIA A+ and Security+ certifications. '
-        'I build hands-on projects in my homelab (servers, networks, firewalls, SIEM) and document everything '
+        'I build hands-on projects in my homelab (servers, networks, firewalls) and document everything '
         'as proof of technical competence. 13 years of customer-facing experience developed strong incident '
         'management, clear communication, and fast problem-solving skills applied daily in IT projects.'
     )
@@ -205,7 +205,7 @@ def draw_cv(c, lang='pt'):
     if lang == 'pt':
         experiences = [
             ('Transição para IT', 'Estudo e Projetos Práticos', '2026 - Presente', [
-                'Homelab com pfSense, Suricata IDS/IPS, SIEM (Elastic Stack), Pi-hole e Docker',
+                'Homelab com Pi-hole e Docker',
                 'Automação com Python: scripts de backup, bots Telegram, integrações API',
                 'Documentação rigorosa de cada projeto no GitHub (homelab-docs)',
                 'Portfolio pessoal: arturfilipe.work (Cloudflare + HTTPS)',
@@ -230,7 +230,7 @@ def draw_cv(c, lang='pt'):
     else:
         experiences = [
             ('Transition to IT', 'Study and Hands-on Projects', '2026 - Present', [
-                'Homelab with pfSense, Suricata IDS/IPS, Elastic SIEM, Pi-hole and Docker',
+                'Homelab with Pi-hole and Docker',
                 'Python automation: backup scripts, Telegram bots, API integrations',
                 'Rigorous documentation of all projects on GitHub (homelab-docs)',
                 'Personal portfolio: arturfilipe.work (Cloudflare + HTTPS)',
@@ -263,13 +263,13 @@ def draw_cv(c, lang='pt'):
     y = section_header('Competências Técnicas' if lang == 'pt' else 'Technical Skills', y - 4)
     
     skills = [
-        ('Segurança:', 'Network security, IDS/IPS (Suricata), SIEM (Elastic Stack), threat intelligence'),
+        ('Segurança:', 'Network security, threat intelligence'),
         ('Redes:', 'TCP/IP, DNS, DHCP, VLANs, firewall rules, pfSense, Wireshark, Nmap'),
         ('Sistemas:', 'Linux (Ubuntu/Debian), Windows Server, Proxmox, VirtualBox'),
         ('Ferramentas:', 'Docker, Docker Compose, Python, Bash, Git, Cloudflare'),
         ('Serviços:', 'Nextcloud, Pi-hole, Jellyfin, Portainer, bind9'),
     ] if lang == 'pt' else [
-        ('Security:', 'Network security, IDS/IPS (Suricata), SIEM (Elastic Stack), threat intelligence'),
+        ('Security:', 'Network security, threat intelligence'),
         ('Networking:', 'TCP/IP, DNS, DHCP, VLANs, firewall rules, pfSense, Wireshark, Nmap'),
         ('Systems:', 'Linux (Ubuntu/Debian), Windows Server, Proxmox, VirtualBox'),
         ('Tools:', 'Docker, Docker Compose, Python, Bash, Git, Cloudflare'),

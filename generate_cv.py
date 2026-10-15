@@ -93,7 +93,7 @@
 93|    pdf.section_title('Perfil Profissional')
 94|    pdf.body_text(
 95|        'Profissional em transicao para IT e ciberseguranca com certificacoes CompTIA A+ e Security+. '
-96|        'Construo projetos praticos no meu homelab - servidores, redes, firewall, SIEM - e documento '
+96|        'Construo projetos praticos no meu homelab - servidores, redes, firewall,  - e documento '
 97|        'tudo como prova de competencia tecnica. 13 anos de experiencia em atendimento ao cliente '
 98|        'deram-me capacidades fortes de gestao de incidentes, comunicacao clara e resolucao rapida '
 99|        'de problemas, que aplico diariamente nos meus projetos IT.'
@@ -114,7 +114,7 @@
 114|
 115|    # IT transition
 116|    pdf.entry_header('Transicao para IT', 'Estudo e Projetos Praticos', '2026 - Presente')
-117|    pdf.bullet('Homelab com pfSense, Suricata IDS/IPS, SIEM (Elastic Stack), Pi-hole e Docker')
+117|    pdf.bullet('Homelab com Pi-hole e Docker')
 118|    pdf.bullet('Automacao com Python: scripts de backup, bots Telegram, integracoes API')
 119|    pdf.bullet('Documentacao rigorosa de cada projeto no GitHub (homelab-docs)')
 120|    pdf.bullet('Portfolio pessoal: arturfilipe.work (GitHub Pages + Cloudflare + HTTPS)')
@@ -140,7 +140,7 @@
 140|
 141|    # ========== TECHNICAL SKILLS ==========
 142|    pdf.section_title('Competencias Tecnicas')
-143|    pdf.skill_tag('Seguranca:', 'Network security, IDS/IPS (Suricata), SIEM (Elastic Stack), threat intel')
+143|    pdf.skill_tag('Seguranca:', 'Network security, threat intel')
 144|    pdf.skill_tag('Redes:', 'TCP/IP, DNS, DHCP, VLANs, firewall rules, pfSense, Wireshark, Nmap')
 145|    pdf.skill_tag('Sistemas:', 'Linux (Ubuntu/Debian), Windows Server, Proxmox, VirtualBox')
 146|    pdf.skill_tag('Ferramentas:', 'Docker, Docker Compose, Python, Bash, Git, Cloudflare')
@@ -198,7 +198,7 @@
 198|    pdf.section_title('Professional Profile')
 199|    pdf.body_text(
 200|        'Professional transitioning to IT and cybersecurity with CompTIA A+ and Security+ certifications. '
-201|        'I build hands-on projects in my homelab - servers, networks, firewalls, SIEM - and document '
+201|        'I build hands-on projects in my homelab - servers, networks, firewalls,  - and document '
 202|        'everything as proof of technical competence. 13 years of customer-facing experience gave me '
 203|        'strong incident management, clear communication, and fast problem-solving skills that I apply '
 204|        'daily in my IT projects.'
@@ -219,7 +219,7 @@
 219|
 220|    # IT transition
 221|    pdf.entry_header('Transition to IT', 'Study and Hands-on Projects', '2026 - Present')
-222|    pdf.bullet('Homelab with pfSense, Suricata IDS/IPS, Elastic SIEM, Pi-hole and Docker')
+222|    pdf.bullet('Homelab with Pi-hole and Docker')
 223|    pdf.bullet('Python automation: backup scripts, Telegram bots, API integrations')
 224|    pdf.bullet('Rigorous documentation of all projects on GitHub (homelab-docs)')
 225|    pdf.bullet('Personal portfolio: arturfilipe.work (GitHub Pages + Cloudflare + HTTPS)')
@@ -245,7 +245,7 @@
 245|
 246|    # ========== TECHNICAL SKILLS ==========
 247|    pdf.section_title('Technical Skills')
-248|    pdf.skill_tag('Security:', 'Network security, IDS/IPS (Suricata), SIEM (Elastic Stack), threat intel')
+248|    pdf.skill_tag('Security:', 'Network security, threat intel')
 249|    pdf.skill_tag('Networking:', 'TCP/IP, DNS, DHCP, VLANs, firewall rules, pfSense, Wireshark, Nmap')
 250|    pdf.skill_tag('Systems:', 'Linux (Ubuntu/Debian), Windows Server, Proxmox, VirtualBox')
 251|    pdf.skill_tag('Tools:', 'Docker, Docker Compose, Python, Bash, Git, Cloudflare')

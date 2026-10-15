@@ -92,7 +92,7 @@ y -= 12
 c.setFont('CR', 9)
 c.setFillColor(PRETO)
 texto = ('Professional transitioning to IT and cybersecurity with CompTIA A+ and Security+ certifications. '
-         'I build hands-on projects in my homelab (pfSense, Suricata, Elastic SIEM, Docker, Pi-hole) and document '
+         'I build hands-on projects in my homelab (Docker, Pi-hole) and document '
          'everything on GitHub. 13 years of customer-facing experience developing strong incident management, '
          'communication and problem-solving skills applied daily in IT projects.')
 for linha in wrap(texto, 9, CW):
@@ -144,7 +144,7 @@ y -= 12
 
 exps = [
     ('Transition to IT', 'Study and Hands-on Projects', '2026 - Present', [
-        'Homelab with pfSense, Suricata IDS/IPS, Elastic SIEM, Pi-hole, Docker and Cloudflare',
+        'Homelab with Pi-hole, Docker and Cloudflare',
         'Python automation: backup scripts, Telegram bots, API integrations',
         'Rigorous documentation on GitHub (homelab-docs); portfolio at arturfilipe.work',
     ]),
@@ -195,7 +195,7 @@ c.line(M, y, W-M, y)
 y -= 12
 
 skills_data = [
-    ('Security:', 'Network security, IDS/IPS (Suricata), SIEM (Elastic Stack), threat intelligence'),
+    ('Security:', 'Network security, threat intelligence'),
     ('Networking:', 'TCP/IP, DNS, DHCP, VLANs, pfSense, firewall rules, Wireshark, Nmap'),
     ('Systems:', 'Linux (Ubuntu/Debian), Windows Server, Proxmox, VirtualBox'),
     ('Tools:', 'Docker, Docker Compose, Python, Bash, Git, Cloudflare, Nextcloud, Pi-hole'),

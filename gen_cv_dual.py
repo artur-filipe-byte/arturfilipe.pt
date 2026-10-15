@@ -113,7 +113,7 @@ def make_cv(filename, lang):
         y = draw_section(c, y, 'PROFESSIONAL PROFILE')
         c.setFont('CR', 9)
         c.setFillColor(PRETO)
-        for linha in wrap(c, 'Professional transitioning to IT and cybersecurity with CompTIA A+ and Security+ certifications. I build hands-on projects in my homelab (pfSense, Suricata, Elastic SIEM, Docker, Pi-hole) and document everything on GitHub. 13 years of customer-facing experience developing strong incident management, communication and problem-solving skills applied daily in IT projects.', 9, CW):
+        for linha in wrap(c, 'Professional transitioning to IT and cybersecurity with CompTIA A+ and Security+ certifications. I build hands-on projects in my homelab (Docker, Pi-hole) and document everything on GitHub. 13 years of customer-facing experience developing strong incident management, communication and problem-solving skills applied daily in IT projects.', 9, CW):
             c.drawString(M, y, linha); y -= 11
         y -= 8
 
@@ -128,7 +128,7 @@ def make_cv(filename, lang):
         y = draw_section(c, y, 'PROFESSIONAL EXPERIENCE')
         for t, s, p, bs in [
             ('Transition to IT', 'Study and Hands-on Projects', '2026 - Present',
-             ['Homelab with pfSense, Suricata IDS/IPS, Elastic SIEM, Pi-hole, Docker and Cloudflare',
+             ['Homelab with Pi-hole, Docker and Cloudflare',
               'Python automation: backup scripts, Telegram bots, API integrations',
               'Rigorous documentation on GitHub; portfolio at arturfilipe.work']),
             ('Casa do Vale Hotel - Front Desk', 'First Receptionist | Evora, Portugal', '2019 - 2026',
@@ -147,7 +147,7 @@ def make_cv(filename, lang):
 
         y = draw_section(c, y, 'TECHNICAL SKILLS')
         y = draw_skills(c, y, [
-            ('Security:', 'Network security, IDS/IPS (Suricata), SIEM (Elastic Stack), threat intel'),
+            ('Security:', 'Network security, threat intel'),
             ('Networking:', 'TCP/IP, DNS, DHCP, VLANs, pfSense, firewall rules, Wireshark, Nmap'),
             ('Systems:', 'Linux (Ubuntu/Debian), Windows Server, Proxmox, VirtualBox'),
             ('Tools:', 'Docker, Docker Compose, Python, Bash, Git, Cloudflare, Nextcloud, Pi-hole'),
@@ -176,7 +176,7 @@ def make_cv(filename, lang):
         y = draw_section(c, y, 'PERFIL PROFISSIONAL')
         c.setFont('CR', 9)
         c.setFillColor(PRETO)
-        for linha in wrap(c, 'Profissional em transi\u00e7\u00e3o para IT e ciberseguran\u00e7a com certifica\u00e7\u00f5es CompTIA A+ e Security+. Construo projetos pr\u00e1ticos no meu homelab (pfSense, Suricata, Elastic SIEM, Docker, Pi-hole) e documento tudo no GitHub. 13 anos de experi\u00eancia em atendimento ao cliente desenvolveram capacidades fortes de gest\u00e3o de incidentes, comunica\u00e7\u00e3o e resolu\u00e7\u00e3o de problemas aplicadas diariamente em projetos IT.', 9, CW):
+        for linha in wrap(c, 'Profissional em transi\u00e7\u00e3o para IT e ciberseguran\u00e7a com certifica\u00e7\u00f5es CompTIA A+ e Security+. Construo projetos pr\u00e1ticos no meu homelab (Docker, Pi-hole) e documento tudo no GitHub. 13 anos de experi\u00eancia em atendimento ao cliente desenvolveram capacidades fortes de gest\u00e3o de incidentes, comunica\u00e7\u00e3o e resolu\u00e7\u00e3o de problemas aplicadas diariamente em projetos IT.', 9, CW):
             c.drawString(M, y, linha); y -= 11
         y -= 8
 
@@ -191,7 +191,7 @@ def make_cv(filename, lang):
         y = draw_section(c, y, 'EXPERI\u00caNCIA PROFISSIONAL')
         for t, s, p, bs in [
             ('Transi\u00e7\u00e3o para IT', 'Estudo e Projetos Pr\u00e1ticos', '2026 - Presente',
-             ['Homelab com pfSense, Suricata IDS/IPS, SIEM Elastic, Pi-hole, Docker e Cloudflare',
+             ['Homelab com  Elastic, Pi-hole, Docker e Cloudflare',
               'Automa\u00e7\u00e3o Python: scripts backup, bots Telegram, integra\u00e7\u00f5es API',
               'Documenta\u00e7\u00e3o rigorosa no GitHub; portfolio em arturfilipe.work']),
             ('Casa do Vale Hotel - Rece\u00e7\u00e3o', 'Rececionista de 1a | \u00c9vora, Portugal', '2019 - 2026',
@@ -210,7 +210,7 @@ def make_cv(filename, lang):
 
         y = draw_section(c, y, 'COMPET\u00caNCIAS T\u00c9CNICAS')
         y = draw_skills(c, y, [
-            ('Seguran\u00e7a:', 'Network security, IDS/IPS (Suricata), SIEM (Elastic Stack), threat intel'),
+            ('Seguran\u00e7a:', 'Network security, threat intel'),
             ('Redes:', 'TCP/IP, DNS, DHCP, VLANs, pfSense, firewall rules, Wireshark, Nmap'),
             ('Sistemas:', 'Linux (Ubuntu/Debian), Windows Server, Proxmox, VirtualBox'),
             ('Ferramentas:', 'Docker, Docker Compose, Python, Bash, Git, Cloudflare, Nextcloud, Pi-hole'),

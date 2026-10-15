@@ -73,7 +73,7 @@ y -= 11
 
 c.setFont('Cal', 8)
 c.setFillColor(MID)
-for line in wrap(c, 'Professional transitioning to IT and cybersecurity with CompTIA A+ and Security+ certifications. I build hands-on projects in my homelab (pfSense, Suricata, Elastic SIEM, Docker, Pi-hole) and document everything on GitHub. 13 years of customer-facing experience developed strong incident management and communication skills applied daily in IT projects.', 'Cal', 8, CW):
+for line in wrap(c, 'Professional transitioning to IT and cybersecurity with CompTIA A+ and Security+ certifications. I build hands-on projects in my homelab (Docker, Pi-hole) and document everything on GitHub. 13 years of customer-facing experience developed strong incident management and communication skills applied daily in IT projects.', 'Cal', 8, CW):
     c.drawString(M, y, line)
     y -= 9
 y -= 5
@@ -113,7 +113,7 @@ y -= 11
 
 for t, s, d, bs in [
     ('Transition to IT', 'Study and Hands-on Projects', '2026 - Present',
-     ['Homelab with pfSense, Suricata IDS/IPS, Elastic SIEM, Pi-hole, Docker',
+     ['Homelab with Pi-hole, Docker',
       'Python automation: backup scripts, Telegram bots, API integrations',
       'Documentation of all projects on GitHub (homelab-docs); portfolio at arturfilipe.work']),
     ('Casa do Vale Hotel', 'First Receptionist | \u00c9vora', '2019 - 2026',
@@ -155,7 +155,7 @@ c.drawString(M, y, 'Technical Skills')
 y -= 11
 
 for l, v in [
-    ('Security:', 'Network security, IDS/IPS (Suricata), SIEM (Elastic Stack), threat intel'),
+    ('Security:', 'Network security, threat intel'),
     ('Networking:', 'TCP/IP, DNS, DHCP, VLANs, pfSense, Wireshark, Nmap'),
     ('Systems:', 'Linux (Ubuntu/Debian), Windows Server, Proxmox, VirtualBox'),
     ('Tools:', 'Docker, Docker Compose, Python, Bash, Git, Cloudflare'),

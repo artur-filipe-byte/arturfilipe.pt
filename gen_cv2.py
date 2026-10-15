@@ -78,7 +78,7 @@ def draw_cv(c):
     c.setFont('Cal', 9)
     c.setFillColor(MID)
     text = ('Professional transitioning to IT and cybersecurity with CompTIA A+ and Security+ certifications. '
-            'I build hands-on projects in my homelab (servers, networks, firewalls, SIEM) and document everything '
+            'I build hands-on projects in my homelab (servers, networks, firewalls) and document everything '
             'as proof of technical competence. 13 years of customer-facing experience developed strong incident '
             'management, clear communication, and fast problem-solving skills applied daily in IT projects.')
     for line in wrap(c, text, 'Cal', 9, CW):
@@ -132,7 +132,7 @@ def draw_cv(c):
     
     exps = [
         ('Transition to IT', 'Study and Hands-on Projects', '2026 - Present', [
-            'Homelab with pfSense, Suricata IDS/IPS, Elastic SIEM, Pi-hole and Docker',
+            'Homelab with Pi-hole and Docker',
             'Python automation: backup scripts, Telegram bots, API integrations',
             'Rigorous documentation of all projects on GitHub (homelab-docs)',
             'Personal portfolio: arturfilipe.work (Cloudflare + HTTPS)',
@@ -195,7 +195,7 @@ def draw_cv(c):
     y -= 14
     
     skills = [
-        ('Security:', 'Network security, IDS/IPS (Suricata), SIEM (Elastic Stack), threat intel'),
+        ('Security:', 'Network security, threat intel'),
         ('Networking:', 'TCP/IP, DNS, DHCP, VLANs, pfSense, Wireshark, Nmap'),
         ('Systems:', 'Linux (Ubuntu/Debian), Windows Server, Proxmox, VirtualBox'),
         ('Tools:', 'Docker, Docker Compose, Python, Bash, Git, Cloudflare'),
