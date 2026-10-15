@@ -88,7 +88,7 @@ def make_b(lang):
         y = draw_header(c, y)
         y = draw_section(c, y, 'PROFESSIONAL PROFILE')
         c.setFont(FR, 9); c.setFillColor(PRETO)
-        for l in wrap(c, 'Entry-level IT Support / Help Desk candidate transitioning from 13+ years in customer-facing hotel operations. CompTIA A+ and Security+ certified, PECB ISO/IEC 27001 Foundation. Hands-on Linux, networking, DNS, Docker and self-hosted services. Strong troubleshooting, documentation and clear communication with non-technical users in PT/EN. Seeking junior IT Support, Service Desk or Help Desk roles in Portugal or remote.', 9, CW):
+        for l in wrap(c, 'After 13 years at a hotel reception desk, dealing with pressure, people and real-time problem solving, I made a focused transition into IT and cybersecurity. It was during that journey that I started studying out of curiosity and realised this is what I want to do. I now hold CompTIA A+, Security+ and PECB ISO/IEC 27001 Foundation and I am looking for IT Support, Service Desk or Help Desk roles in Portugal or remote.', 9, CW):
             c.drawString(M, y, l); y -= 11
         y -= 8
         y = draw_section(c, y, 'CERTIFICATIONS')
@@ -131,7 +131,7 @@ def make_b(lang):
         y = draw_header(c, y)
         y = draw_section(c, y, 'PERFIL PROFISSIONAL')
         c.setFont(FR, 9); c.setFillColor(PRETO)
-        for l in wrap(c, 'Candidato a IT Support / Help Desk em in\u00edcio de carreira, em transi\u00e7\u00e3o ap\u00f3s 13+ anos no atendimento ao cliente na hotelaria. Certifica\u00e7\u00f5es CompTIA A+ e Security+, PECB ISO/IEC 27001 Foundation. Linux, redes, DNS, Docker e servi\u00e7os self-hosted na pr\u00e1tica. Fortes capacidades de resolu\u00e7\u00e3o de problemas, documenta\u00e7\u00e3o e comunica\u00e7\u00e3o clara com utilizadores n\u00e3o t\u00e9cnicos em PT/EN. Procuro fun\u00e7\u00f5es junior de IT Support, Service Desk ou Help Desk em Portugal ou remoto.', 9, CW):
+        for l in wrap(c, 'Depois de 13 anos na receção de um hotel, a lidar com pressão, pessoas e problemas para resolver em tempo real, fiz uma transição focada para IT e cibersegurança. Foi durante esse percurso que comecei a estudar por curiosidade e descobri que era isto que queria fazer. Hoje tenho as certificações CompTIA A+, Security+ e PECB ISO/IEC 27001 Foundation e procuro funções de IT Support, Service Desk ou Help Desk em Portugal ou remoto.', 9, CW):
             c.drawString(M, y, l); y -= 11
         y -= 8
         y = draw_section(c, y, 'CERTIFICA\u00c7\u00d5ES')
